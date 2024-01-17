@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "0267bdc9-af3f-486c-9b0c-60664f292932",
+		"name": "Article",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29014475"
+	},
+	"item": [
+		{
+			"name": "Get All Articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:1323/article/20/0"
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:1323/article/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"longest article in my database\",\r\n    \"content\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r\n    \"category\":\"category 10\",\r\n    \"status\": \"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:1323/article"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Article",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"update longest article in my database\",\r\n    \"content\": \"update Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r\n    \"category\":\"update category\",\r\n    \"status\": \"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:1323/article/9"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"title two\",\r\n    \"description\": \"desc two\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:1323/article/1"
+			},
+			"response": []
+		}
+	]
+}
